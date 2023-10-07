@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="academico.css">
+<title>Desenvolvimento Acadêmico</title>
+</head>
+<body>
+
+<h1>Desenvolvimento Acadêmico</h1>
+
+<div class="chart-container">
+    <canvas class="line-chart"></canvas>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.js"></script>
+
+<script>
+var ctx = document.getElementsByClassName("line-chart");
+
+var chartGraph = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"],
+        datasets: [{
+            label: 'Linha 1',
+            data: [10, 20, 15, 30, 25, 40, 35, 50, 45, 60, 55, 70],
+            borderColor: 'blue', // Cor da linha
+            backgroundColor: 'rgba(0, 0, 255, 0.2)', // Cor de preenchimento abaixo da linha
+        }, {
+            label: 'Linha 2',
+            data: [5, 15, 10, 25, 20, 35, 30, 45, 40, 55, 50, 65],
+            borderColor: 'green', // Cor da linha
+            backgroundColor: 'rgba(0, 255, 0, 0.2)', // Cor de preenchimento abaixo da linha
+        }]
+    },
+    options: {
+        responsive: false, // Desabilita a responsividade para manter o tamanho especificado
+    }
+});
+</script>
+
+</body>
+</html>
