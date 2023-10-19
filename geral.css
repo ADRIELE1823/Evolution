@@ -1,29 +1,29 @@
-:root{
---colo-primary: rgb(4, 46, 235);
---color-danger:#ad0211;
---color-success: #41f1b6;
---color-warning: #ffbb55;
---color-white: #fff;
---color-info-dark: #0586f0;
---color-info-light: rgb(34, 211, 255);
---color-dark: #023d75; 
---color-light:rgba(11, 104, 158, 0.18);
---color-primary-variant: #111e88;
---color-dark-variant: #046ee7;
---color-background: #f6f6f9;
-
---card-border-radius: 2rem;
---border-radius-1: 0.4rem;
---border-radius-2: 0.8rem;
---border-radius-3: 1.2rem;
-
---card-padding: 1.8rem;
---padding-1: 1.2rem;
-
---box-shadow: 0 2rem 3rem var(--color-light);
-}
-
-*{
+:root {
+    --color-primary: rgb(4, 46, 235);
+    --color-danger: #ad0211;
+    --color-success: #41f1b6;
+    --color-warning: #ffbb55;
+    --color-white: #fff;
+    --color-info-dark: #0586f0;
+    --color-info-light: rgb(34, 211, 255);
+    --color-dark: #023d75;
+    --color-light: rgba(11, 104, 158, 0.18);
+    --color-primary-variant: #111e88;
+    --color-dark-variant: #046ee7;
+    --color-background: #f6f6f9;
+  
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+  
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+  
+    --box-shadow: 0 2rem 3rem var(--color-light);
+  }
+  
+  * {
     margin: 0;
     padding: 0;
     outline: 0;
@@ -32,23 +32,22 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-}
-
-html{
+  }
+  
+  html {
     font-size: 14px;
-}
-
-body{
+  }
+  
+  body {
     width: 100vw;
-    height: 100vw;
-    font-family: poppins, sans-serif;
+    height: 100vh; /* Correção da altura */
+    font-family: "Poppins", sans-serif; /* Correção da font-family */
     font-size: 0.88rem;
     background: var(--color-background);
     user-select: none;
     overflow: hidden;
     color: var(--color-dark);
-}
-
+  }
 .container{
     display: grid;
     width: 96%;
@@ -203,16 +202,16 @@ aside .sidebar a.active:before{
     content: '';
     width: 6px;
     height: 100%;
-    background: var(--colo-primary);
+    background: var(--color-primary);
 }
 
 aside .sidebar a.active span{
-    color: var(--colo-primary);
+    color: var(--color-primary);
     margin-left: calc(1rem -3px);
 }
 
 aside .sidebar a:hover{
-    color: var(--colo-primary);
+    color: var(--color-primary);
 }
 
 aside .sidebar a:hover span{
@@ -277,4 +276,52 @@ main .insights > div.expenses span{
 
 main .insights > div.income span{
     background: var(--color-success);
+}
+
+main .insights > div .middle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .insights h3{
+    margin: 1rem 0 0.6rem;
+    font-size: 1rem ;
+}
+
+main .insights .progress{
+    position: relative;
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+}
+
+main .insights svg{
+    width: 7rem;
+    height: 7rem;
+}
+
+main .insights svg circle{
+       fill: none;
+       stroke: var(--color-primary);
+       stroke-width: 14;
+       stroke-linecap: round;
+       transition: translate(5px, 5px);
+       stroke-dasharray: 110;
+       stroke-dashoffset: 92;
+}
+
+main .insights .sales svg circle{
+    stroke-dashoffset: -30;
+    stroke-dasharray: 200;
+}
+
+
+main .insights .expenses svg circle{
+    stroke-dashoffset: 20;
+    stroke-dasharray: 80;
+}
+main .insights .income svg circle{
+    stroke-dashoffset: 20;
+    stroke-dasharray: 35;
 }
