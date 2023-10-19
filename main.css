@@ -8,7 +8,7 @@
 }
 
 body{
-
+  overflow: hidden;
   color: rgb(2, 2, 2);
 }
 
@@ -28,7 +28,7 @@ body{
 .logo{
   position: relative;
   font-size: 25px;
-  color: aqua;
+  color:aqua;
   text-decoration: none;
   font-weight: 600;
 }
@@ -46,58 +46,48 @@ body{
 }
 .navbar a {
   font-size: 18px;
-  color: aqua;
+  color: rgb(4, 163, 236);
   text-decoration: none;
   font-weight: 500;
   margin-left: 35px;
-  transition: .3s;
+  transition: color 0.3s; 
+}
+
+.navbar a:hover {
+  color: aqua; 
 }
 .navbar a a:hover,
 .navbar a.active{
   color: #ffffff;
 }
-
-.container{
-  display:inline-block;
-  width: auto;
-}
-
-.cadastro-image{
-  width: 600px;
-}
-
-.imgCadastro{
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: auto;
-  display: block;
-
-}
-.casdatro {
-  
+.cadastro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
   height: 100vh;
   background-size: cover;
   background-position: center;
-  display: flex;
-  align-items: center;
-  padding: 0 10%;
-  position: relative; /* Adicione esta linha */
-}
-
-.casdatro img {
-  width: 100px;
-  height: 100px;
 }
 
 .cadastro-content {
   max-width: 600px;
 }
+
+.cadastro-image {
+  width: 600px;
+  height: 600px;
+  float: right;
+  margin-left: auto;
+  position: absolute;
+  right: 0;
+  margin-top: -450px;
+}
+
 .cadastro-content h1{
   font-size: 56px;
   font-weight: 700;
   line-height: 1.2;
-  margin: 40px;
 }
 
 .cadastro-content h1::before{
@@ -107,26 +97,22 @@ body{
   right: 0;
   width: 100%;
   height: 100%;
-  animation: showRight 1s ease forwards ;
-  animation-delay: .4s;
 }
 .cadastro-content h3{
   font-size: 32px;
   font-weight: 700;
-  color: rgb(1, 48, 67);
-  margin: 40px;
+  color: rgb(11, 99, 99);
 }
 .cadastro-content p{
-  color: rgb(14, 1, 60);
+  color: rgb(11, 2, 43);
   font-size: 19px;
-  margin: 40px ;
+  margin: 20px 0 40px;
 }
 .cadastro-content .btn-box{
   display: flex;
   justify-content: space-between;
   width: 345px;
   height: 50px;
-  margin: 40px;  
 }
 
 .btn-box a {
@@ -136,10 +122,10 @@ body{
   align-items: center;
   width: 150px;
   height: 150%;
-  background: rgb(41, 48, 48);
-  border: 2px solid rgb(40, 49, 49);
+  background: rgba(129, 129, 129, 0.329);
+  border: 2px solid rgb(8, 8, 8);
   border-radius: 8px ;
-  color: white;
+  color: black;
   text-decoration: none;
   font-weight: 600;
   letter-spacing: 1px;
@@ -153,7 +139,7 @@ body{
   left: 0;
   width: 0%;
   height: 100%;
-  background: rgb(18, 19, 19);
+  background: rgb(103, 105, 107);
   z-index: -1;
   transition: .5s;
 }
@@ -170,9 +156,6 @@ body{
   background: transparent;
   transition: 3s;
 }
-
-
-
 @keyframes showRight{
   100%{
     width: 0;
