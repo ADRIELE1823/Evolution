@@ -13,12 +13,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(90deg, #00dbde 0%, #246579 100%);
+  background: white;
   }
   
 
 .container {
-  background-color: whitesmoke;
+  background-color: black;
   padding: 6px;
   width: 350px;
   height: 450px;
@@ -28,7 +28,6 @@ body {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 0 0 20px 0 darkgrey;
 }
 
 form {
@@ -43,7 +42,8 @@ form {
   margin-top: 40px;
   position: relative;
   border-radius: 30px;
-  box-shadow: 0 0 7px 0 rgb(43, 198, 226);
+  box-shadow: 0 0 7px 0 rgb(250, 248, 248);
+  color: #f8f5f5;
 }
 
 .buttonsForm button {
@@ -52,13 +52,14 @@ form {
   border: none;
   position: relative;
   padding: 10px 29px;
+  color: rgb(3, 199, 199);
 }
 
 .btnColor {
   position: absolute;
-  width: 108px;
+  width: 130px;
   height: 100%;
-  background: linear-gradient(to right, #56a7e9, #9bc2f0);
+  background: white;
   border-radius: 30px;
   transition: .3s;
 }
@@ -73,8 +74,8 @@ input[type="text"], input[type="password"] {
 }
 
 button[type="submit"] {
-  background: #008a83;
-  color: white;
+  background: white;
+  color: rgb(10, 10, 10);
   border-radius: 30px;
   width: 100%;
   border: none;
@@ -90,10 +91,13 @@ button[type="submit"] {
   margin: 10px 0 0 5px;
   width: 80%;
   font-size: 13px;
+  color: white
+  ;
 }
 
 #signin {
   left: 25px;
+  
 }
 
 #signup {
