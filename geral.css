@@ -1,13 +1,13 @@
 :root {
     --color-primary: rgb(4, 46, 235);
-    --color-danger: #ad0211;
+    --color-danger: #d60000;
     --color-success: #41f1b6;
     --color-warning: #ffbb55;
     --color-white: #fff;
     --color-info-dark: #0586f0;
     --color-info-light: rgb(34, 211, 255);
-    --color-dark: #023d75;
-    --color-light: rgba(11, 104, 158, 0.18);
+    --color-dark: #e4e8ec;
+    --color-light: #21262d;
     --color-primary-variant: #111e88;
     --color-dark-variant: #046ee7;
     --color-background: #f6f6f9;
@@ -32,7 +32,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    color: black;
+    color: rgb(243, 232, 232);
   }
   
   html {
@@ -44,7 +44,7 @@
     height: 100vh; /* Correção da altura */
     font-family: "Poppins", sans-serif; /* Correção da font-family */
     font-size: 0.88rem;
-    background: black;
+    background: rgb(15, 15, 15);
     user-select: none;
     overflow: hidden;
     color: var(--color-dark);
@@ -72,7 +72,7 @@ img{
 h1{
     font-weight: 800;
     font-size: 1.8rem;
-    color: rgb(69, 216, 216);
+    color: rgb(255, 255, 255);
 }
 
 h2{
@@ -82,12 +82,7 @@ h2{
 .logo h2 {
     white-space: nowrap; /* Prevent the text from breaking */
     text-align: center; /* Center-align the <span> text */
-    color: rgb(150, 238, 238);
-}
-
-.sidebar h3{
-    font-size: 0.87rem;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 h3{
@@ -129,12 +124,6 @@ b{
 }
 
 
-.sidebar span i{
-    color: white;
-}
-.sidebar span{
-    color: white;
-}
 
 
 aside{
@@ -145,11 +134,11 @@ aside{
     top: 3rem;
     margin: 0;
     width: 100%;
-    background: black;
+    background: rgb(11, 86, 86);
 }
 
 aside.top{
-    background: rgb(126, 129, 133);
+    background: rgb(91, 209, 52);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -169,7 +158,7 @@ aside .close{
 }
 
 aside .sidebar{
-    background: black;
+    background: rgb(14, 13, 13);
     display: flex ;
     flex-direction: column;
     height: 86vh;
@@ -207,7 +196,7 @@ aside .sidebar a:last-child{
 
 aside .sidebar a.active{
     background: var(--color-light);
-    color:white;
+    color: var(--colo-primary);
     margin-left: 0;
 }
 
@@ -215,11 +204,11 @@ aside .sidebar a.active:before{
     content: '';
     width: 6px;
     height: 100%;
-    background:white;
+    background: var(--color-primary);
 }
 
 aside .sidebar a.active span{
-    color: var(--colo);
+    color: var(--color-primary);
     margin-left: calc(1rem -3px);
 }
 
@@ -232,8 +221,8 @@ aside .sidebar a:hover span{
 }
 
 aside .sidebar .message-count{
-    background:aqua;
-    color: black;
+    background:var(--color-danger);
+    color: var(--color-white);
     padding: 2pz 10px;
     font-size: 11px;
     border-radius:var(--border-radius-1) ;
@@ -253,7 +242,7 @@ main.date{
 
 main .date input[type='date']{
     background: transparent ;
-    color: aqua;
+    color: var(--color-dark);
 }
 
 main .insights{

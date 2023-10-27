@@ -4,12 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="pturmas.css">
-
 <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 <title>Desenvolvimento da Turma</title>
 </head>
-<body>
+<body style="height: 100vh;">
     <div class="container">
         <aside>
             <div class="top">
@@ -34,6 +33,7 @@
                     <h3>Notificações</h3>
                     <span class="message-count">30</span>
                 </a>
+                
                 <a href="#">
                     <span><i class='bx bxs-message-alt-add'></i></span>
                     <h3>Add turmas</h3>
@@ -45,27 +45,61 @@
             </div>
         </aside>
         <main>
-            <h1>Turmas</h1><br><br>
-            <form class="formulario-preto" name="f_cadastro" action="#" method="get">
-                <label for="turma">Selecione sua turma:</label>
-                <select name="turma" id="turma">
-                    <option value="ti">Turma de TI</option>
-                    <option value="eletromecanica">Turma de Eletromecânica</option>
-                </select><br>
-        
-                <label for="ano">Ano:</label>
-                <select name="ano" id="ano">
-                    <option value="1">1º Ano</option>
-                    <option value="2">2º Ano</option>
-                    <option value="3">3º Ano</option>
-                    <option value="4">4º Ano</option>
-                </select>
-                <input class="" type="submit" name="f_enviar" value="Enviar">
-            </form>
-        </main>
-        
-    </div>
-    <script src="pturmas.js"></script>
+            <h1>Turmas</h1>
+           
 
+            <div class="insights">
+                <!-- Primeiro bloco -->
+                <div class="sales">
+                    <div class="middle">
+                        <div class="left">
+                            <h3> Turmas do 1° ano</h3>
+                            <h1>10</h1>
+                        </div>
+                    </div>
+                    <small class="text-muted">INTEGRADO</small>
+                </div>
+
+                <!-- Segundo bloco (copie o bloco e ajuste o conteúdo conforme necessário) -->
+                <div class="expenses">
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Turmas do 2° ano</h3>
+                            <h1>10</h1>
+
+                        </div>
+                       
+                    </div>
+                    <small class="text-muted">INTEGRADO</small>
+                </div>
+
+                <!-- Terceiro bloco (copie o bloco e ajuste o conteúdo conforme necessário) -->
+                <div class="income">
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Turmas do 3° ano</h3>
+                            <h1>10</h1>
+
+                        </div>
+                        
+                    </div>
+                    <small class="text-muted">INTEGRADO</small>
+                </div>
+
+                <!-- Quarto bloco (copie o bloco e ajuste o conteúdo conforme necessário) -->
+                <div class="custom-block">
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Turmas do 4° ano</h3>
+                            <h1>10</h1>
+
+                        </div>
+                        
+                    </div>
+                    <small class="text-muted">INTEGRADO</small>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
 </html>

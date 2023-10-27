@@ -46,7 +46,6 @@ function checkInputs() {
     setSuccessFor(passwordConfirmation);
   }
 
-  
   const formControls = form.querySelectorAll(".form-control");
 
   const formIsValid = [...formControls].every((formControl) => {
@@ -76,23 +75,8 @@ function setSuccessFor(input) {
   formControl.className = "form-control success";
 }
 
-// ...
-
-if (formIsValid) {
-  console.log("O formulário está 100% válido!");
-
-  // Redireciona o usuário para a página desejada após o término do cadastro
-  window.location.href = "pturmas.html";
-}
-
-// ...
-
-
 function checkEmail(email) {
   return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
     email
   );
 }
-
-
-
