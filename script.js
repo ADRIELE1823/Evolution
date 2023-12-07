@@ -45,3 +45,20 @@ ScrollReveal({
      ScrollReveal().reveal('.home-img, .services-container, .portifolio-box, .contato form', { origin: 'bottom' });
      ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
      ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
+   
+
+     let prev = document.querySelector('.prev');
+let next = document.querySelector('.next');
+let box = document.querySelector('.box');
+
+let degrees = 0;
+
+prev.addEventListener('click', function () {
+  degrees += 45;
+  box.style.transform = 'perspective(1000px) rotateY(' + degrees + 'deg)';
+});
+
+next.addEventListener('click', function () {
+  degrees -= 45; // Altere o sinal para "-" para girar no sentido oposto
+  box.style.transform = 'perspective(1000px) rotateY(' + degrees + 'deg)';
+});
