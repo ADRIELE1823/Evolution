@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Alunos</title>
+    <link rel="stylesheet" href="turma.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Alunos</h1>
+        <form id="form" class="form">
+            <div class="form-control">
+                <label for="nome">Nome do Aluno:</label>
+                <input type="text" id="nome" placeholder="Digite o nome do aluno..." required>
+                <span class="error" id="nomeError"></span>
+            </div>
+            <div class="form-control">
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" placeholder="Digite a idade do aluno..." required>
+                <span class="error" id="idadeError"></span>
+            </div>
+            <div class="form-control">
+                <label for="curso">Curso:</label>
+                <input type="text" id="curso" placeholder="Digite o curso do aluno..." required>
+                <span class="error" id="cursoError"></span>
+            </div>
+            <button type="submit">Cadastrar Aluno</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
